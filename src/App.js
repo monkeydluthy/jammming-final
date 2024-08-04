@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
 var clientID = '7e838818cd4e46339bd87ced08d567d7';
-// var redirect_uri = encodeURIComponent('http://localhost:3000');
+var redirect_uri = encodeURIComponent(
+  'https://66afe2d96e8dc304584100c8--jammming-portfolio-project.netlify.app/'
+);
 var scope = encodeURIComponent(
   'user-read-email playlist-modify-private playlist-modify-public'
 );
