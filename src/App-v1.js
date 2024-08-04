@@ -52,17 +52,8 @@ export default function App() {
   const [playlist, setPlaylist] = useState([]);
   const [query, setQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [token, setToken] = useState(null);
 
-  useEffect(() => {
-    handleRedirectCallback();
-    const accessToken = getAccessToken();
-    if (accessToken) {
-      setToken(accessToken);
-    }
-  }, []);
-
-  // const token = getAccessToken();
+  const token = getAccessToken();
 
   useEffect(() => {
     async function fetchData() {
